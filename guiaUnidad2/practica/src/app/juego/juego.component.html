@@ -1,0 +1,8 @@
+<div class="container">
+    <h2>Presiona el siguiente boton para tirar dados</h2>
+    <button class="btn btn-primary" (click)="tirarDados()">Presiona Aqui</button>
+</div>
+<div *ngFor="let numero of numeroAleatorio">
+    <app-dado [numero]="numero"></app-dado>
+</div>
+
